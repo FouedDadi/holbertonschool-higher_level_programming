@@ -1,7 +1,8 @@
 def print_last_digit(number):
+    c = number % 10
     if number > 0:
-        number = number % 10
-    else:
-        number = (number % -10) * -1
-    print(number, end="")
-    return(number)
+        c = number % 10
+    elif number < 0:
+        c = abs(number) % 10
+    print(c, end ="")
+    return c
