@@ -7,11 +7,9 @@
 int check_cycle(listint_t *list)
 {
 listint_t *one, *two;
-if (list == NULL || list->next == NULL )
-return (0);
 one = list;
-two = one->next;
-while ((two != NULL) & (two->next != NULL) & (one != NULL))
+two = list;
+while ((two != NULL) && (two->next != NULL))
 {
 one = one->next;
 two = two->next->next;
