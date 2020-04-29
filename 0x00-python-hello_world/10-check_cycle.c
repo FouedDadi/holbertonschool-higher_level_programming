@@ -13,10 +13,11 @@ one = list;
 two = one->next;
 while ((two != NULL) & (two->next != NULL))
 {
-one = one->next;
-two = two->next->next;
 if (one == two)
 return (1);
+one = one->next;
+two = two->next->next;
+
 }
 return (0);
 }
