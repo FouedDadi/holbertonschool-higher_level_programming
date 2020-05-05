@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
+    if my_list == []:
+        return None
     mul2 = []
     for x in my_list:
         if my_list[x] % 2 == 0:
