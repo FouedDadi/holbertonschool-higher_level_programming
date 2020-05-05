@@ -2,7 +2,7 @@
 def divisible_by_2(my_list=[]):
     mul2 = []
     for x in my_list:
-        if x % 2 == 0:
+        if my_list[x] % 2 == 0:
             mul2.append(True)
         else:
             mul2.append(False)
