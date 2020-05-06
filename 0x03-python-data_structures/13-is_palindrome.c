@@ -15,11 +15,9 @@ for (; t; x++, t = t->next)
 {
     z[x] = t->n;
 }
-printf("%d\n",x);
-z[x + 1] = '\0';
+z[x] = '\0';
 for (y = x - 1; y >= x / 2; y--, i++)
 {
-    /*printf("y = %d,i = %d\n",z[y], z[i]);*/
     if (z[y] != z[i])
         return (0);
 }
