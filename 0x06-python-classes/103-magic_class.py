@@ -22,12 +22,12 @@ class MagicClass:
 
     def area(self):
         """
-        return area
+        Return the area
         """
-        return self.__radius ** 2 * math.pi
+        return (self.__radius ** 2 * math.pi)
 
     def circumference(self):
         """
-        return circumference
+        Return The circumference
         """
-        return self.__radius * math.pi * 2
+        return (2 * math.pi * self.__radius)
