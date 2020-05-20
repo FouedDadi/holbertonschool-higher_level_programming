@@ -41,3 +41,21 @@ class Square:
         return the square area
         """
         return self.__size ** 2
+
+    def __gt__(self, other):
+        return self.__size > other.__size
+
+    def __ge__(self, other):
+        return self.__size >= other.__size
+
+    def __ne__(self, other):
+        return self.__size != other.__size
+
+    def __eq__(self, other):
+        return self.__size == other.__size
+
+    def __it__(self, other):
+        return self.__size <= other.__size
+
+    def __inf__(self, other):
+        return self.__size < other.__size
