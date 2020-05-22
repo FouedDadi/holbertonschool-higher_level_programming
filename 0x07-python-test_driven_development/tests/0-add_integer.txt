@@ -1,0 +1,39 @@
+>>> add_integer = __import__('add_integer_6').add_integer
+
+
+--  string and int
+>>> add_integer("hello", 2)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
+--  two ints
+>>> add_integer(8, 2)
+10
+
+
+--  positive and negative int
+>>> add_integer(100, -2)
+98
+
+
+--  entering one int a
+>>> add_integer(2)
+100
+
+
+--  float and negative int
+>>> add_integer(100.3, -2)
+98
+
+
+--  boolean and int
+>>> add_integer(True, -2)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
+--  no arguments
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
