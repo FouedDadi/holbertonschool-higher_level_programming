@@ -1,0 +1,26 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+
+--  passing int instead of matrix
+>>> print(matrix_divided(6, 3))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+--  no arguments
+>>> print(matrix_divided())
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+
+--  passing string instead of matrix
+>>> print(matrix_divided("hello", 3))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+--  dividing by 0
+>>> matrix = [[1, 2, 3],[4, 5, 6]]
+>>> print(matrix_divided(matrix, 0))
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
