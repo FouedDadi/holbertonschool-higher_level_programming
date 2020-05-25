@@ -110,7 +110,10 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """
-        return new rectangle in square shape
+        """square method
+        Keyword Arguments:
+            size {int} -- [size of square] (default: {0})
+        Returns:
+            [Rectangle] -- [a square]
         """
         return cls(size, size)
