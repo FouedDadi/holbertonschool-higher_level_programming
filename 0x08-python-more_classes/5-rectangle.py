@@ -83,6 +83,7 @@ class Rectangle:
         return string representation
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
     def __del__(self):
         """
         print message when deleting
