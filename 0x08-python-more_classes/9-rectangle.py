@@ -15,8 +15,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances = Rectangle.number_of_instances + 1
-        self.height = height
-        self.width = width
+        self.__height = height
+        self.__width = width
 
     @property
     def width(self):
@@ -97,7 +97,7 @@ class Rectangle:
 
     def bigger_or_equal(rect_1, rect_2):
         """
-        return bigest rectangle based on area
+        return bigest rectangle based on are
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError('rect_1 must be an instance of Rectangle')
@@ -111,6 +111,6 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """
-        return rectangle in square shape
+        return new rectangle with square shape
         """
         return cls(size, size)
