@@ -4,7 +4,7 @@ creating a class rectangle
 """
 
 
-class rectangle:
+class Rectangle:
     """
     empty class
     """
