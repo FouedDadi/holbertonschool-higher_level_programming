@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-"""module to add methods to list class"""
-
+"""
+creating class MyList
+"""
 
 class MyList(list):
-    """subclass to add methods to list class"""
+    """
+    public instnace method
+    """
+
     def print_sorted(self):
-        """prints sorted list"""
+        """
+        print list
+        """
+
         print(sorted(self))
