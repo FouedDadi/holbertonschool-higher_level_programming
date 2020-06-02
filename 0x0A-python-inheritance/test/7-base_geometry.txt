@@ -1,0 +1,61 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+-- entering no value:
+>>> try:
+    bg.integer_validator("name", )
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 1 required positional argument: 'value'
+
+>>> try:
+    bg.integer_validator("age", )
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 1 required positional argument: 'value'
+
+>>> try:
+    bg.integer_validator("distance", )
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 1 required positional argument: 'value'
+
+
+-- entering no arguments:
+>>> try:
+    bg.integer_validator()
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> try:
+    bg.integer_validator()
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> try:
+    bg.integer_validator()
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+-- entering different type of value:
+>>> try:
+    bg.integer_validator("name", [4, 9])
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer
+
+>>> try:
+    bg.integer_validator("age", "hello")
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] age must be an integer
+
+>>> try:
+    bg.integer_validator("distance", [6, 8])
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] distance must be an integer

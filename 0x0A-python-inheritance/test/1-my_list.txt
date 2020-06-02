@@ -1,0 +1,42 @@
+>>> MyList = __import__('1-my_list').MyList
+
+
+--  list take no arguments
+>>> my_list = MyList()
+print(my_list)
+[]
+
+
+-- adding a string to the list
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append("holberton")
+>>> my_list.append(3)
+[1, 'holberton', 3]
+
+
+-- a list inside a list without appending
+>>> my_list = MyList([1, 2])
+[1, 2]
+
+
+-- two argumments to MyList
+>>> my_list = MyList([1, 2], 4)
+Traceback (most recent call last):
+TypeError: list() takes at most 1 argument (2 given)
+
+
+-- adding a list to the list
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append([1, 2])
+>>> my_list.append(3)
+[1, [1, 2], 3]
+
+
+-- iteration
+>>> my_list = MyList(1)
+>>> my_list = MyList(2)
+>>> my_list = MyList(3)
+Traceback (most recent call last):
+TypeError: 'int' object is not iterable
