@@ -13,6 +13,3 @@ try:
     newlist = load_from_json_file(filename)
 except:
     newlist = []
-for x in range(1, len(argv)):
-    newlist.append(x)
-save_to_json_file(newlist, 'add_item.json')
