@@ -13,6 +13,6 @@ try:
     newlist = load_from_json_file('add_item.json')
 except:
     newlist = list()
-for a in range(len(argv)):
+for a in range(1, len(argv)):
     newlist.append(argv[a])
 save_to_json_file(newlist, 'add_item.json')
