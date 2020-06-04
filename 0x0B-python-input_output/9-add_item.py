@@ -15,4 +15,4 @@ except:
     newlist = []
 for x in range(1, len(argv)):
     newlist.append(x)
-save_to_json_file(newlist, filename)
+save_to_json_file(newlist, 'add_item.json')
