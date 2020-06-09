@@ -106,6 +106,8 @@ class Rectangle(Base):
         """
         print rectangle with # character
         """
+        if self.width == 0 or self.height == 0:
+            return ''
         for w in range(self.__height):
             for w in range(self.__x):
                 print(' ', end='')
