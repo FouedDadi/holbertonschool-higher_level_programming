@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-safe from injection script that lists all states
-that matches the argument from the database hbtn_0e_0_usa
+script that lists all cities from the database hbtn_0e_4_usa
 """
 
 
