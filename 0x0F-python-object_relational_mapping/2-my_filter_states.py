@@ -13,11 +13,11 @@ if __name__ == "__main__":
                          password=sys.argv[2],
                          database=sys.argv[3],
                          port=3306)
-    cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name='{}' ORDER BY states.id"
+    cu = db.cursor()
+    cu.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id"
                    .format(sys.argv[4]))
-    result = cursor.fetchall()
+    result = cu.fetchall()
     for i in range(len(result)):
         print(result[i])
-    cursor.close()
+    cu.close()
     db.close()
