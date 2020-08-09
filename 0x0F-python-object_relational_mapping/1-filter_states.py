@@ -14,8 +14,7 @@ if __name__ == "__main__":
                          database=sys.argv[3],
                          port=3306)
     cu = db.cursor()
-    cu.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'
-               ORDER BY states.id")
+    cu.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
     result = cu.fetchall()
     for i in range(len(result)):
         print(result[i])
