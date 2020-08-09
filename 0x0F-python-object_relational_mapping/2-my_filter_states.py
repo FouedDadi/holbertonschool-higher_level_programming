@@ -15,7 +15,7 @@ if __name__ == "__main__":
                          port=3306)
     cu = db.cursor()
     cu.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id"
-                   .format(sys.argv[4]))
+               .format(sys.argv[4]))
     result = cu.fetchall()
     for i in range(len(result)):
         print(result[i])
