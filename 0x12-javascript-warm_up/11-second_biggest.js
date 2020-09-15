@@ -5,5 +5,5 @@ if (list.length > 3) {
   list = list.reverse();
   console.log(list[1]);
 } else {
-  console.log('0');
+  console.log(0);
 }
