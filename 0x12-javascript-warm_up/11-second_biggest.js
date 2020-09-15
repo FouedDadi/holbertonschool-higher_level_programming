@@ -1,6 +1,6 @@
 #!/usr/bin/node
 let list = process.argv;
-if (list.length > 3) {
+if (list.length > 2) {
   list = list.sort();
   list = list.reverse();
   console.log(list[1]);
