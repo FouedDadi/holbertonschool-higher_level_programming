@@ -1,11 +1,11 @@
 #!/usr/bin/node
-const rectangle = require('./5-square.js');
-class Square extends rectangle {
+const square = require('./5-square.js');
+class Square extends square {
   charPrint (c) {
     if (c === undefined) { super.print(); } else {
       let x = 0;
       for (x = 0; x < this.height; x++) {
-        console.log('c'.repeat(this.width));
+        console.log(c.repeat(this.width));
       }
     }
   }
